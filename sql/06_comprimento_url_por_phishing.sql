@@ -1,4 +1,4 @@
--- O comprimento da URL é um forte indicador de se a URL é phishing?
+-- O comprimento da URL é um forte indicador de phishing?
 
 SELECT phishing,
     AVG(url_length) AS media_url_length,
