@@ -19,7 +19,7 @@ UNION ALL
 
 SELECT phishing,
     AVG(n_redirection) AS media_redirection,
-    (SELECT n_redirection FROM (
+    (SELECT AVG(n_redirection) FROM (
             SELECT n_redirection,
              ROW_NUMBER() OVER (ORDER BY n_redirection) AS posicao
             FROM web_page_phishing
